@@ -4,6 +4,7 @@ import React from "react";
 import { Platform, TouchableOpacity } from "react-native";
 
 import { MapsScreen, NewPlaceScreen, PlaceDetailScreen, PlaceListScreen } from "../screens/index";
+import PlaceList from "../screens/place-list";
 import colors from "../utils/colors";
 
 const Stack = createNativeStackNavigator();
@@ -23,7 +24,7 @@ const PlacesNavigator = () => {
       }}>
       <Stack.Screen
         name="Places"
-        component={PlaceListScreen}
+        component={PlaceList}
         options={({ navigation }) => ({
           title: "Direcciones",
           headerRight: () => (
