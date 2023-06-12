@@ -15,4 +15,8 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 20,
   },
+  action: {
+    paddingVertical: 10,
+    justifyContent: "space-between",
+  },
 });

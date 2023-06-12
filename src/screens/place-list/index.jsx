@@ -13,7 +13,7 @@ const PlaceList = ({ navigation }) => {
 
   const renderItem = ({ item }) => <PlaceItem {...item} onSelect={onHandlerSelect} />;
   const keyExtractor = (item) => item.id;
-  console.warn(places);
+
   return (
     <FlatList
       data={places}
